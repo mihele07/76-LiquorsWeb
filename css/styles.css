@@ -14,3 +14,8 @@
   color: black;
   text-align: center;
 }
+
+.mainBackground {
+    background: url(“/images/pexels-bernyce-hollingworth-2702805.jpg”);
+    height: 500px;
+}
