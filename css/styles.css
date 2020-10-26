@@ -1,0 +1,43 @@
+.headerNY {
+    position: absolute;
+}
+
+.mike {
+    height: 530px;
+}
+
+.nyPic {
+  width: 100%;
+  z-index: -5;
+}
+
+.logo {
+  position: absolute;
+  top: 1%;
+  left: 5%;
+}
+
+.callUs {
+    position: absolute;
+    right: 23%;
+    top: 7%;
+    color: #eaf756;
+    width: 33%;
+    text-align: right;
+}
+
+.navbar {
+    background-color: #760834; 
+    
+}
+
+
+.center {
+    margin: auto; 
+}
+
+    .adress {
+        color: black;
+        text-align: center;
+    }
+
