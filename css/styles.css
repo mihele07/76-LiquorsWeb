@@ -1,3 +1,7 @@
+body {
+  background-color: brown;
+}
+
 .nyPic {
   width: 100%;
 }
@@ -7,15 +11,49 @@
 }
 
 .center {
-  margin: auto;
+  margin: 0 auto;
 }
+
 
 .adress {
   color: black;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+}
+
+.carousel {
+  border: solid white;
+  margin: 10px;
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.cardBody {
+    margin-left:8% ;
+}
+
+.card-body {
+  background-color: #760834;
+  color: white;
   text-align: center;
 }
 
-.mainBackground {
-    background: url(“/images/pexels-bernyce-hollingworth-2702805.jpg”);
-    height: 500px;
+.card {
+  margin: 2rem 0;
+  border: 10px;
+  border: solid 5px white;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: #760834;
+    color: white;
+    padding: 50px 30px;
 }
