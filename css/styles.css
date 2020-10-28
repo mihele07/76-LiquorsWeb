@@ -1,6 +1,19 @@
-body {
-  background-color: brown;
+.background-image {
+  background-image: url("../images/pexels-bernyce-hollingworth-2702805.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
 }
+
+.card :hover {
+  background-color: blueviolet;
+}
+
+a:link {
+  text-decoration: none;
+}
+
 
 .nyPic {
   width: 100%;
@@ -45,6 +58,7 @@ body {
 }
 
 .card {
+  width: 20rem;
   margin: 2rem 0;
   border: 10px;
   border: solid 5px white;

@@ -11,4 +11,11 @@ $(function () {
       $("#carouselButton").children("i").addClass("fa-pause");
     }
   });
+
+//  function makeHover() {
+//    $(".card").style.background = "Yellow";
+//  }
+
+ // $(".card").onmouseover = makeHover;//
+  
 });
