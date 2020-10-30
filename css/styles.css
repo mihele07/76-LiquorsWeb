@@ -1,5 +1,27 @@
+
 body {
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif; }
+
+.background-image {
+  background-image: url("../images/pexels-bernyce-hollingworth-2702805.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+
+.card :hover {
+  background-color: blueviolet;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+.nyPic {
+  width: 100%;
+
 }
 
 
@@ -77,3 +99,51 @@ body {
 .jumbotron h1{
   color: rgb(243, 10, 10);
 }  
+.center {
+  margin: 0 auto;
+}
+
+
+.adress {
+  color: black;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+}
+
+.carousel {
+  border: solid white;
+  margin: 10px;
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.cardBody {
+    margin-left:8% ;
+}
+
+.card-body {
+  background-color: #760834;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  width: 20rem;
+  margin: 2rem 0;
+  border: 10px;
+  border: solid 5px white;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: #760834;
+    color: white;
+    padding: 50px 30px;
+}
