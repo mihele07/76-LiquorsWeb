@@ -1,16 +1,79 @@
-.nyPic {
-  width: 100%;
+body {
+  font-family: "Open Sans", sans-serif; 
 }
+
 
 .navbar {
   background-color: #760834;
 }
 
-.center {
-  margin: auto;
+.site-footer{
+  background-color: #760808;
+}
+.myBackgroundImg {
+  background-image: url('/images/pexels-prem-pal-singh-602750.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height:1000px;
+  width: 1000p;
+  margin: absolute;
+  background-position: 0rem;
+  background-blend-mode: lighten;
+  opacity: 0.7;
+
+}
+.myBackgroundImg h4 {
+    color:#760808;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 30pt;
+    
+  }
+.myBackgroundImg p {
+    color:rgb(7, 11, 247);
+    font-weight: bolder;
+    font-style: inherit;
+    font-size: 5mm;
+    background-color:rgb(238, 236, 231);
+}
+.myContactImg {
+  background-image: url('/images/pexels-markus-spiske-121191.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height:1000px;
+  width: 1000p;
+  margin: absolute;
+  background-position: 0rem;
+
+}
+.img-thumbnail {
+  height:300px;
+  width: 300px;
 }
 
-.adress {
-  color: black;
-  text-align: center;
+.myproductsImg {
+  background-image: url('/images/pexels-bernyce-hollingworth-2702805.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height:1000px;
+  width: 1000p;
+  margin: absolute;
+  background-position: 0rem;
 }
+
+.jumbotron {
+  background-image: url('/images/header-pic.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height:250px;
+  width: 250p;
+  margin: absolute;
+  background-position: 0rem;
+}
+.jumbotron h1{
+  color: rgb(243, 10, 10);
+}  
