@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>76-Liquors Ltd</title>
+
+  </head>
+    <body>
+
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="index.html"
@@ -56,7 +60,7 @@
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="aboutus.html">
+              <a class="nav-link" href="#">
                 <i class="fa fa-info fa-lg"> </i> Our Story
               </a>
             </li>
@@ -73,9 +77,9 @@
                 <i class="fa fa-list fa-lg"> </i> Products
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Wine</a>
-                <a class="dropdown-item" href="#">Spirits</a>
-                <a class="dropdown-item" href="#">Champange</a>
+                <a class="dropdown-item" href="products.html#winesCategory" id="myWine">Wine</a>
+                <a class="dropdown-item" href="products.html#spiritsCategory" id="mySpirits">Spirits</a>
+                <a class="dropdown-item" href="products.html#champangeCategory">Champange</a>
               </div>
             </li>
             <li class="nav-item">
@@ -89,73 +93,147 @@
           <button
             type="button"
             class="btn btn-danger"
-            data-toggle="modal"
-            data-target="#deliveryModal"
+            data-toggle="modal" data-target="#myDelivery"
           >
             Delivery
           </button>
         </div>
       </div>
     </nav>
-  </head>
-
-  <body>
     <div class="myBackgroundImg">
-      <div class="container">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="row mx-lg-n5 justify-content-md-center">
-          <h4>Our Story</h4>
-          <p>
-            Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum..
-          </p>
+      <div class="modal fade" id="myDelivery" tabindex="-1" aria-labelledby="exampleModalDelivery" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalDelivery">Complete Delivery details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="row mx-lg-n5 justify-content-md-center">
-          <h4>Our Misson</h4>
-          <p>
-            Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum..
-          </p>
+    </div>
+    <div class="container">
+      <div class="row myRow">
+          <div class="col">
+            <p>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOurStory" aria-expanded="false" aria-controls="collapseExample">
+                <h4 >Our Story</h4>
+              </button>
+            </p>
+            <div class="collapse" id="collapseOurStory">
+              <div class="card card-body">
+                <p>
+                  Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum..
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="row mx-lg-n5 justify-content-md-center">
-          <h4>Our History</h4>
+      <div class="row myRow">
+        <div class="col">
           <p>
-            Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum..
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOurMission" aria-expanded="false" aria-controls="collapseExample">
+              <h4>Our Misson</h4>
+            </button>
           </p>
-        </div>
+          <div class="collapse" id="collapseOurMission">
+            <div class="card card-body">
+              <p>
+                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum..
+              </p>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="row myRow">
+        <div class="col">
+          <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOurHistory" aria-expanded="false" aria-controls="collapseExample">
+              <h4>Our History</h4>
+            </button>
+          </p>
+          <div class="collapse" id="collapseOurHistory">
+            <div class="card card-body">
+              <p>
+                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum..
+              </p>
+            </div>
+          </div>
       </div>
     </div>
-    
+    </div>
+    </div>
     <footer class="site-footer fixed bottom">
       <div class="container">
         <div class="row">
@@ -218,8 +296,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
   
-    </script>
   </body>
 </html>

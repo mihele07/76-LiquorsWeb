@@ -28,9 +28,17 @@
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="images/logo.png" height="30" width="30" alt=""
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo.png" height="40" width="40"
         /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#liquorNavbar"
+        ></button>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -39,30 +47,52 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="liquorNavbar">
+
+        <div class="collapse navbar-collapse" id="nucamNavbar">
           <ul class="navbar-nav center">
-            <li class="nav-item active mr-4">
-              <a class="nav-link" href="#"
-                ><i class="fa fa-home fa-lg"></i> Home</a
-              >
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="fa fa-home fa-lg"> </i> Home
+              </a>
             </li>
-            <li class="nav-item mr-4">
-              <a class="nav-link" href="aboutus.html"
-                ><i class="fa fa-info fa-lg"></i> About</a
-              >
-            </li>
-            
-
-            <li class="nav-item mr-4">
-              <a class="nav-link" href="products.html">🍾 Products</a>
-            </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="contactus.html"
-                ><i class="fa fa-address-card fa-lg"></i> Contact</a
+              <a class="nav-link" href="aboutus.html">
+                <i class="fa fa-info fa-lg"> </i> Our Story
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdwon-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                <i class="fa fa-list fa-lg"> </i> Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="products.html#winesCategory" id="myWine">Wine</a>
+                <a class="dropdown-item" href="products.html#spiritsCategory" id="mySpirits">Spirits</a>
+                <a class="dropdown-item" href="products.html#champangeCategory">Champange</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">
+                <i class="fa fa-address-card fa-lg"> </i> Contact Us
+              </a>
             </li>
           </ul>
+        </div>
+        <div class="col col-ms-4 col-xl-2 align-self-end">
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-toggle="modal" data-target="#myDelivery"
+          >
+            Delivery
+          </button>
         </div>
       </div>
     </nav>
@@ -186,46 +216,45 @@
       <div class="container">
         <div class="row cardBody">
           <div class="col-md-6 col-sm-12">
-            <div  class="card">
-              <img 
+            <div class="card">
+              <img
                 src="images/card1-bourbons.jpg"
                 class="card-img-top"
                 alt="..."
               />
-              <a href="#"> <div class="card-body">
-                <p class="card-text">RARE BOURBONS & WINES</p>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card-body">
+                  <p class="card-text">RARE BOURBONS & WINES</p>
+                </div>
+              </a>
             </div>
-          
           </div>
           <div class="col-md-6 col-sm-12">
-             <div class="card" >
+            <div class="card">
               <img src="images/card2-wine.jpg" class="card-img-top" alt="..." />
-              <a href="#">   <div class="card-body">
-                <p class="card-text">FINE WINES</p>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card-body">
+                  <p class="card-text">FINE WINES</p>
+                </div>
+              </a>
             </div>
-
-          
           </div>
         </div>
 
         <div class="row cardBody">
           <div class="col-md-6 col-sm-12">
-           <div class="card">
+            <div class="card">
               <img
                 src="images/card3-brands.jpg"
                 class="card-img-top"
                 alt="..."
               />
-              <a href="#">    <div class="card-body">
-                <p class="card-text">TOP BRANDS</p>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card-body">
+                  <p class="card-text">TOP BRANDS</p>
+                </div>
+              </a>
             </div>
-          
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="card">
@@ -234,12 +263,12 @@
                 class="card-img-top"
                 alt="..."
               />
-              <a href="#">   <div class="card-body">
-                <p class="card-text">BEST SPARKLING WINES</p>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card-body">
+                  <p class="card-text">BEST SPARKLING WINES</p>
+                </div>
+              </a>
             </div>
-          
           </div>
         </div>
       </div>

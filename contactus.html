@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>76-Liquors Ltd</title>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="index.html"
@@ -73,9 +75,9 @@
                 <i class="fa fa-list fa-lg"> </i> Products
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Wine</a>
-                <a class="dropdown-item" href="#">Spirits</a>
-                <a class="dropdown-item" href="#">Champange</a>
+                <a class="dropdown-item" href="products.html#winesCategory">Wine</a>
+                <a class="dropdown-item" href="products.html#spiritsCategory">Spirits</a>
+                <a class="dropdown-item" href="products.html#champangeCategory">Champange</a>
               </div>
             </li>
             <li class="nav-item">
@@ -97,19 +99,16 @@
         </div>
       </div>
     </nav>
-  </head>
+  
 
-  <body>
-
+  
     <div class="myContactImg">
-        <br>    
         <div class="container">
-            <br>
-            <br>
+          <div class="row mx">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12086.382223885103!2d-73.9539441!3d40.7709194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90598d42770b56f0!2s76%20Liquors%20Ltd!5e0!3m2!1sen!2sus!4v1604007123274!5m2!1sen!2sus" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
         </div>
     </div>
-
     <footer class="site-footer fixed bottom">
       <div class="container">
         <div class="row">
@@ -183,17 +182,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $(".btn-primary").click(function () {
-          $(".collapse").collapse("toggle");
-        });
-        $(".btn-success").click(function () {
-          $(".collapse").collapse("show");
-        });
-        $(".btn-warning").click(function () {
-          $(".collapse").collapse("hide");
-        });
-      });
+      
     </script>
   </body>
 </html>

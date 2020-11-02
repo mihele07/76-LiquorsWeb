@@ -36,131 +36,139 @@
             </div>    
         </div>
     </header>
+    <head>
+      <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="images/logo.png" height="40" width="40"
+          /></a>
 
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img src="images/logo.png" height="40" width="40"
-        /></a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#liquorNavbar"
-        ></button>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#liquorNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="nucamNavbar">
-          <ul class="navbar-nav center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <i class="fa fa-home fa-lg"> </i> Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">
-                <i class="fa fa-info fa-lg"> </i> Our Story
-              </a>
-            </li>
-            <li class="nav-item active dropdown">
-              <a
-                class="nav-link dropdwon-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <i class="fa fa-list fa-lg"> </i> Products
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Wine</a>
-                <a class="dropdown-item" href="#">Spirits</a>
-                <a class="dropdown-item" href="#">Champange</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">
-                <i class="fa fa-address-card fa-lg"> </i> Contact Us
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col col-ms-4 col-xl-2 align-self-end">
           <button
+            class="navbar-toggler"
             type="button"
-            class="btn btn-danger"
-            data-toggle="modal"
-            data-target="#deliveryModal"
+            data-toggle="collapse"
+            data-target="#liquorNavbar"
+          ></button>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#liquorNavbar"
           >
-            Delivery
+            <span class="navbar-toggler-icon"></span>
           </button>
+
+          <div class="collapse navbar-collapse" id="nucamNavbar">
+            <ul class="navbar-nav center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fa fa-home fa-lg"> </i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">
+                  <i class="fa fa-info fa-lg"> </i> Our Story
+                </a>
+              </li>
+              <li class="nav-item active dropdown">
+                <a
+                  class="nav-link dropdwon-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-list fa-lg"> </i> Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#winesCategory">Wine</a>
+                  <a class="dropdown-item" href="#spiritsCategory">Spirits</a>
+                  <a class="dropdown-item" href="#champangeCategory">Champange</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">
+                  <i class="fa fa-address-card fa-lg"> </i> Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-ms-4 col-xl-2 align-self-end">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-toggle="modal"
+              data-target="#deliveryModal"
+            >
+              Delivery
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
-     
+      </nav>
   </head>
 
   <body>
-    <div class="myproductsImg"> 
-        <br>
-        <div class="card border-danger mb-3" style="max-width:550px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                <img src="images/pexels-kenneth-2912108.jpg" class="card-img" alt="wine bottle">
-                </div>
-                <div class="col-md-8">
-                <div class="card-body ">
-                  <h5 class="card-title text-danger">Our Wines</h5>
-                  <p class="card-text"> Come and sample a wide collection of quality wines !!!!!</p>
-                  <a href="#" class="btn btn-danger"><u>Select your wine</u></a>
-                </div>
-                </div>
+    <div class="myproductsImg">
+      <div class="container-fluid">
+        <div class="row row-cols-1 justify-content-center" >
+          <div class="col col-sm-4">
+            <div class="card border-danger mb-3" style="max-width:600px;">
+              <div class="row no-gutters">
+                  <div class="col-md-6">
+                  <img src="images/pexels-kenneth-2912108.jpg" class="card-img" alt="wine bottle">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ">
+                      <h5 class="card-title text-danger" id="winesCategory"><a href="#myWines" ></a>Our Wines</h5>
+                      <p class="card-text"> Come and sample a wide collection of quality wines !!!!!</p>
+                      <a href="#" class="btn btn-danger"><u>Select your wine</u></a>
+                    </div>
+                  </div>
+              </div>
             </div>
-        </div>
-            <br>
-            <div class="card border-danger bg-danger mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="images/pexels-kenneth-2912108.jpg" class="card-img" alt="Spirit bottle">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body ">
-                      <h5 class="card-title text-white">Our Spirits</h5>
-                      <p class="card-text"> Visit us we have a wide selection of choice spirits, you cannot go wrong...</p>
-                      <a href="#" class="btn btn-danger"><u>Click to select your spirits</u></a>
-                    </div>
-                  </div>
+          </div>
+        </div> 
+        <div class="row align-items-center">
+          <div class="col col-sm-4">
+            <div class="card border-danger bg-danger mb-3" style="max-width: 600px;">
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                <img src="images/pexels-kenneth-2912108.jpg" class="card-img" alt="Spirit bottle">
                 </div>
-              </div>    
-            <br>
-            <div class="card border-danger mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="images/pexels-fotograf-jylland-2995333.jpg" class="card-img" alt="Champange bottle">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body ">
-                      <h5 class="card-title text-danger">Our Champanges</h5>
-                      <p class="card-text"> Well stocked with the best for every event ~ ~ ~ ~ ~ </p>
-                      <a href="#" class="btn btn-danger"><u>Make your selection</u></a>
-                    </div>
+                <div class="col-md-6">
+                  <div class="card-body" id="spiritsCategory"> 
+                    <h5 class="card-title text-white" ><a href="#mySpirits"></a>Our Spirits</h5>
+                    <p class="card-text"> Visit us, we have a wide selection of choice spirits, you cannot go wrong...</p>
+                    <a href="#" class="btn btn-dark"><u>Click to select your spirits</u></a>
                   </div>
                 </div>
               </div>
+            </div> 
+          </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col col-sm-4">
+            <div class="card border-danger mb-3" style="max-width: 600px;">
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <img src="images/pexels-fotograf-jylland-2995333.jpg" class="card-img" alt="Champange bottle">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body ">
+                    <h5 class="card-title text-danger" id="champangeCategory">Our Champanges</h5>
+                    <p class="card-text"> Well stocked with the best for every event ~ ~ ~ ~ ~ </p>
+                    <a href="#" class="btn btn-danger"><u>Make your selection</u></a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>  
+      </div> 
     </div>
-
     <footer class="site-footer fixed bottom">
       <div class="container">
         <div class="row">
@@ -234,17 +242,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $(".btn-primary").click(function () {
-          $(".collapse").collapse("toggle");
-        });
-        $(".btn-success").click(function () {
-          $(".collapse").collapse("show");
-        });
-        $(".btn-warning").click(function () {
-          $(".collapse").collapse("hide");
-        });
-      });
+      
     </script>
   </body>
 </html>
