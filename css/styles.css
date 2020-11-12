@@ -11,14 +11,23 @@ body html {
   max-width: 100%;
 }
 
-.card :hover {
+.card1 :hover {
   background-color: blueviolet;
 }
 
 a:link {
   text-decoration: none;
+
 }
 
+.tel {
+  text-decoration: none;
+  color: chocolate;
+}
+
+a:hover {
+  color: yellow;
+}
 
 .nyPic {
   width: 100%;
@@ -31,7 +40,7 @@ a:link {
 }
 
 .site-footer{
-  background-color: #760808;
+  background-color: #760834;
 }
 .myBackgroundImg {
   background-image: url('../images/card1-bourbons-blur.jpg');
@@ -39,10 +48,15 @@ a:link {
   background-size: cover;
   height:500px;
   background-position: center;
-
- 
-
 }
+ .linksC {
+   margin: 2% 0;
+   text-align: center;
+   font-size: 0.9rem;
+   color: white;
+   
+ }
+
   .aboutTitles {
     color:yellow;
     font-style: italic;
@@ -135,10 +149,15 @@ a:link {
 }
 
 .card {
-  width: 20rem;
+  width: 80%;
   margin: 2rem 0;
   border: 10px;
   border: solid 5px white;
+}
+
+.foot {
+  margin: 0;
+  padding: 3% 1%;
 }
 
 .footer {
@@ -148,3 +167,5 @@ a:link {
     color: white;
     padding: 50px 30px;
 }
+
+

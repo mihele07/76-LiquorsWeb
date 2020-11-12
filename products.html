@@ -26,213 +26,240 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>76-Liquors Ltd</title>
-
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <h1>Our Offering </h1>
-                </div>
-            </div>    
-        </div>
-    </header>
-    <head>
-      <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img src="images/logo.png" height="40" width="40"
-          /></a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#liquorNavbar"
-          ></button>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#liquorNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="nucamNavbar">
-            <ul class="navbar-nav center">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                  <i class="fa fa-home fa-lg"> </i> Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">
-                  <i class="fa fa-info fa-lg"> </i> Our Story
-                </a>
-              </li>
-              <li class="nav-item active dropdown">
-                <a
-                  class="nav-link dropdwon-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <i class="fa fa-list fa-lg"> </i> Products
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#winesCategory">Wine</a>
-                  <a class="dropdown-item" href="#spiritsCategory">Spirits</a>
-                  <a class="dropdown-item" href="#champangeCategory">Champange</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactus.html">
-                  <i class="fa fa-address-card fa-lg"> </i> Contact Us
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col col-ms-4 col-xl-2 align-self-end">
-            <button
-              type="button"
-              class="btn btn-danger"
-              data-toggle="modal"
-              data-target="#deliveryModal"
-            >
-              Delivery
-            </button>
-          </div>
-        </div>
-      </nav>
   </head>
 
   <body>
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <h1>Our Offering</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo.png" height="40" width="40"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#liquorNavbar"
+        ></button>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#liquorNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nucamNavbar">
+          <ul class="navbar-nav center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fa fa-home fa-lg"> </i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">
+                <i class="fa fa-info fa-lg"> </i> Our Story
+              </a>
+            </li>
+            <li class="nav-item active dropdown">
+              <a
+                class="nav-link dropdwon-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa fa-list fa-lg"> </i> Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#winesCategory">Wine</a>
+                <a class="dropdown-item" href="#spiritsCategory">Spirits</a>
+                <a class="dropdown-item" href="#champangeCategory">Champange</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">
+                <i class="fa fa-address-card fa-lg"> </i> Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-ms-4 col-xl-2 align-self-end">
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#deliveryModal"
+          >
+            Delivery
+          </button>
+        </div>
+      </div>
+    </nav>
+
     <div class="myproductsImg">
       <div class="container-fluid">
-        <div class="row row-cols-1 justify-content-center" >
+        <div class="row row-cols-1 justify-content-center">
           <div class="col col-sm-4">
-            <div class="card border-danger mb-3" style="max-width:600px;">
+            <div class="card border-danger mb-3" style="max-width: 600px">
               <div class="row no-gutters">
-                  <div class="col-md-6">
-                  <img src="images/pexels-kenneth-2912108.jpg" class="card-img" alt="wine bottle">
+                <div class="col-md-6">
+                  <img
+                    src="images/pexels-kenneth-2912108.jpg"
+                    class="card-img"
+                    alt="wine bottle"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title text-danger" id="winesCategory">
+                      <a href="#myWines"></a>Our Wines
+                    </h5>
+                    <p class="card-text">
+                      Come and sample a wide collection of quality wines !!!!!
+                    </p>
+                    <a class="btn btn-danger view-pdf" target="_blank" href="images/wines-list.pdf">Our Wines</a>    
+                     
                   </div>
-                  <div class="col-md-6">
-                    <div class="card-body ">
-                      <h5 class="card-title text-danger" id="winesCategory"><a href="#myWines" ></a>Our Wines</h5>
-                      <p class="card-text"> Come and sample a wide collection of quality wines !!!!!</p>
-                      <a href="#" class="btn btn-danger"><u>Select your wine</u></a>
-                    </div>
-                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="row align-items-center">
           <div class="col col-sm-4">
-            <div class="card border-danger bg-danger mb-3" style="max-width: 600px;">
+            <div
+              class="card border-danger bg-danger mb-3"
+              style="max-width: 600px"
+            >
               <div class="row no-gutters">
                 <div class="col-md-6">
-                <img src="images/pexels-kenneth-2912108.jpg" class="card-img" alt="Spirit bottle">
+                  <img
+                    src="images/pexels-kenneth-2912108.jpg"
+                    class="card-img"
+                    alt="Spirit bottle"
+                  />
                 </div>
                 <div class="col-md-6">
-                  <div class="card-body" id="spiritsCategory"> 
-                    <h5 class="card-title text-white" ><a href="#mySpirits"></a>Our Spirits</h5>
-                    <p class="card-text"> Visit us, we have a wide selection of choice spirits, you cannot go wrong...</p>
-                    <a href="#" class="btn btn-dark"><u>Click to select your spirits</u></a>
+                  <div class="card-body" id="spiritsCategory">
+                    <h5 class="card-title text-white">
+                      <a href="#mySpirits"></a>Our Spirits
+                    </h5>
+                    <p class="card-text">
+                      Visit us, we have a wide selection of choice spirits, you
+                      cannot go wrong...
+                    </p>
+                    <a href="#" class="btn btn-dark"
+                      ><u>Click to select your spirits</u></a
+                    >
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col col-sm-4">
-            <div class="card border-danger mb-3" style="max-width: 600px;">
+            <div class="card border-danger mb-3" style="max-width: 600px">
               <div class="row no-gutters">
                 <div class="col-md-6">
-                  <img src="images/pexels-fotograf-jylland-2995333.jpg" class="card-img" alt="Champange bottle">
+                  <img
+                    src="images/pexels-fotograf-jylland-2995333.jpg"
+                    class="card-img"
+                    alt="Champange bottle"
+                  />
                 </div>
                 <div class="col-md-6">
-                  <div class="card-body ">
-                    <h5 class="card-title text-danger" id="champangeCategory">Our Champanges</h5>
-                    <p class="card-text"> Well stocked with the best for every event ~ ~ ~ ~ ~ </p>
-                    <a href="#" class="btn btn-danger"><u>Make your selection</u></a>
+                  <div class="card-body">
+                    <h5 class="card-title text-danger" id="champangeCategory">
+                      Our Champanges
+                    </h5>
+                    <p class="card-text">
+                      Well stocked with the best for every event ~ ~ ~ ~ ~
+                    </p>
+                    <a href="#" class="btn btn-danger"
+                      ><u>Make your selection</u></a
+                    >
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
-        </div>  
-      </div> 
+        </div>
+      </div>
     </div>
     <footer class="site-footer fixed bottom">
-      <div class="container">
+      <div class="container foot">
         <div class="row">
-          <div class="col-4 col-sm-2 offset-1">
+          <div class="col-md-4 col-sm-6 linksC">
             <h5>Links</h5>
-            <ul class="list-unstyled">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">Our Story</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="contactus.html">Contact</a></li>
-              </ul>
-            </ul>
+
+            <div class="">
+              <a href="index.html" class="linksC"
+                ><i class="fa fa-home fa-lg"> </i> Home</a
+              >
+              <a href="aboutus.html" class="linksC"
+                ><i class="fa fa-info fa-lg"> </i> Our Story</a
+              >
+              <a href="#" class="linksC"
+                ><i class="fa fa-list fa-lg"> </i> Products</a
+              >
+              <a href="contactus.html" class="linksC"
+                ><i class="fa fa-address-card fa-lg"> </i> Contact</a
+              >
+            </div>
           </div>
 
-          <div class="col-2 col-sm-4 text-center">
+          <div class="col-sm-6 col-md-4 linksC">
             <h5>Social</h5>
             <a
               class="btn btn-social-icon btn-instagram"
               href="http://instagram.com/"
+              target="_blank"
               ><i class="fa fa-instagram"></i
             ></a>
             <a
               class="btn btn-social-icon btn-facebook"
               href="http://facebook.com/"
+              target="_blank"
               ><i class="fa fa-facebook"></i
             ></a>
             <a
               class="btn btn-social-icon btn-twitter"
               href="http://twitter.com/"
+              target="_blank"
               ><i class="fa fa-twitter"></i
             ></a>
-            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"
+            <a
+              class="btn btn-social-icon btn-google"
+              href="http://youtube.com/"
+              target="_blank"
               ><i class="fa fa-youtube"></i
             ></a>
           </div>
 
-          <div class="col-sm-4 text-center">
+          <div class="col-sm-12 col-md-4 linksC">
             <h5>Contact/Address</h5>
-            <a role="button" class="btn btn-link" href="tel:+12122491700"
+            <a href="tel:+12122491700" class="tel"
               ><i class="fa fa-phone"></i> 1-212-249-1700</a
             ><br />
-            <a role="button" class="btn btn-link" href="#"
-              ><i class="fa fa-address-card"></i> 1473 1st Ave, New York, NY
-              10021</a
-            >
+            Open: Monday - Saturday 9a.m. - Midnight
+            <i class="fa fa-address-card"></i> 1473 1st Ave, New York, NY 10021
           </div>
-          <div class="col align-end">
-            <h5>Location</h5>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12086.382223885103!2d-73.9539441!3d40.7709194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90598d42770b56f0!2s76%20Liquors%20Ltd!5e0!3m2!1sen!2sus!4v1604007123274!5m2!1sen!2sus" width="100" height="100" name="iframe_a" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-        </div>
-        <div class="row justify-content-end">
-          <a
-            href="#top"
-            title="Scroll to top"
-            id="scroll-top-link"
-            class="btn btn-danger"
-            role="button"
-            aria-hidden="true"
-            data-av_icon=""
-            data-av_iconfont="entypo-fontello"
-            ><span class="avia_hidden_link_text">Scroll to top</span></a
-          >
         </div>
       </div>
     </footer>
@@ -241,8 +268,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-      
-    </script>
+    <script></script>
   </body>
 </html>
